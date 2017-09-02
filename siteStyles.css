@@ -1,0 +1,72 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+.navbar-header {
+    color:white;
+}
+
+.desktop {
+	color:aqua;
+}
+
+#div1, #div2, #div3 {
+position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#div4, #div5, #div6 {
+position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+#hardware, #software, #code {
+            float:left;
+            vertical-align: middle;
+}
+
+/* @media screen and (max-width: 767px) {
+    .desktop {
+        display: none;
+    }
+	
+}
+*/
+@media (min-width:768px) {
+    .mobile {
+        display: none;
+    }
+
+    .navbar-header {
+        float: none !important;
+        display: inline-block !important;
+    }
+    .navbar-brand {
+        float: none !important;
+        /*display: inline-block !important;*/
+    }
+    .navbar .navbar-nav {
+        float: none !important;
+        display: inline-block !important;
+        clear: none !important;
+    }
+    .navbar .navbar-nav > li {
+        float: none !important;
+        display: inline-block !important;
+    }
+    .navbar .navbar-nav > li li {
+        text-align: left !important;
+    }
+
+    .collapse.navbar-collapse#centerednav {
+        float: none !important;
+        display: inline-block!important;
+        width: auto !important;
+        clear: none !important;
+    }
+	.navbar > .container {
+	 text-align: center !important;
+	}
+}
+
+
